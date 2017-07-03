@@ -3,7 +3,7 @@ Express DataFire
 
 Live-editing & testing of datafire endpoints & scheduled tasks using express.
 
-![](https://doc-00-2o-docs.googleusercontent.com/docs/securesc/n419gpuoebaj7j8vaakg00o1mvksiipr/8jb62apaai1dru3uajbri3hq2aco810k/1499104800000/03822313962190750421/03822313962190750421/0B6Bbmgd8asH-QjczNERlWUJyQk0?e=download)
+![](https://gist.githubusercontent.com/coderofsalvation/561331553271fb75028a8dda6ddddd69/raw/24dfe7f5180eefcb0e32adbfea6ef9c3a250d46f/datafire-express-demo.gif)
 
 ## Usage: as application
 
@@ -50,7 +50,7 @@ Please go to [datafire.io](https://datafire.io) in case you want a comfortable w
 | IoT sensors / hardware access        | yes     | no |
 | runs on intranet                     | yes     | no |
 
-![](https://lh5.googleusercontent.com/YuWDkxqDagINfg2ySBFiwEN9Cx47UFQptIMRVoilKNTKUIr2SUr1rk7D9BYV9tlZoZUH7pTC0vNmmXw=w1919-h966-rw)
+![](https://gist.githubusercontent.com/coderofsalvation/561331553271fb75028a8dda6ddddd69/raw/24dfe7f5180eefcb0e32adbfea6ef9c3a250d46f/datafire-express-bigpicture.gif)
 
 ## Environment variables 
 
