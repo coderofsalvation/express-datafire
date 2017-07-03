@@ -59,7 +59,7 @@ Please go to [datafire.io](https://datafire.io) in case you want:
 | IoT sensors / hardware access  | yes     | no |
 | runs on intranet                     | yes     | no |
 | offline prototyping                  | yes     | no |
-| hasslefree                           | yes     | no |
+| (server) hasslefree                  | no     | yes |
 | safe for clientwork                  | no      | yes |
 | work with extremely big files / video encoding | yes     | no |
 
