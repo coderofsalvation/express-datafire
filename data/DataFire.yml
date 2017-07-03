@@ -14,10 +14,6 @@ paths:
   /helloworld:
     get:
       action: ./data/helloworld.js
-  /foo:
-    get:
-      action: ./data/anothertest.js
-
 
 tasks:
   your_task:
