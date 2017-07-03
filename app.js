@@ -9,6 +9,15 @@ var app = express()
 
 require('./lib')(app, { port: port, host: host })
 
+// configure SSL if any
+if ( process.env.SSL_PRIVKEY && process.env.SSL_CERT){
+	var options             = {}
+	options.key = fs.readFileSync( process.env.SSL_PRIVKEY ) // key.pem file
+	options.cert= fs.readFileSync( process.env.CERT   ) // cert.pem file
+	app.enable('trust proxy')
+	httpolyglot.createServer(options, app)
+}
+
 module.exports = { 
 	app:app, 
 	server: app.listen(port, function(){
