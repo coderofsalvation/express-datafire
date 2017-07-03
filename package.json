@@ -1,0 +1,37 @@
+{
+  "name": "2wa.faas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js --config .nodemon.json ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoinstall": "^0.3.1",
+    "basic-auth": "^1.1.0",
+    "body-parser": "^1.17.1",
+    "cron-humanize": "^1.0.7",
+    "datafire": "^2.4.0",
+    "express": "^4.15.2",
+    "express-file-manager": "^1.0.4",
+    "express-socket.io": "^1.0.3",
+    "express-status-monitor": "^0.1.9",
+    "git-pull-or-clone": "^1.0.0",
+    "glob": "^7.1.1",
+    "httpolyglot": "^0.1.2",
+    "lodash": "^4.17.4",
+    "microcule": "^5.1.1",
+    "node-schedule": "^1.2.1",
+    "nrequire": "^1.1.2",
+    "request": "^2.81.0",
+    "safe-node-require": "^1.0.0",
+    "safer-json-stringify": "^1.0.1",
+    "swagger-express-router": "^1.0.0",
+    "swagger-ui-express": "^2.0.0",
+    "wt": "^1.1.1",
+    "zip-dir": "^1.0.2"
+  }
+}

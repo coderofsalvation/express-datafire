@@ -1,0 +1,19 @@
+options:
+  cors: true
+
+openapi:
+  schemes:
+    - http
+    - https
+
+#authorizers:
+#  user:
+#    action: ./function/auth.js
+
+paths:
+  /helloworld:
+    get:
+      action: ./data/helloworld.js
+  /hellogist:
+    get:
+      action: ./data/hellogist.js
