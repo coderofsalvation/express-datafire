@@ -35,11 +35,21 @@ BOOM!
 
 ## Why
 
-Express-datafire for experimental-minded datafire-enthousiast, and not for the fainthearted.
-Please go to [datafire.io](https://datafire.io) in case you want a comfortable way of glue-ing together complex dataflows with javascript.
+> Disclaimer: I'm not affiliated with datafire, so basically this is fanware
+
+Express-datafire is intended for datafire enthousiast & experimentation, or to simply run 
+ datafire-code which can't run on datafire.io.
+It wraps some express goodies around the datafire engine.
+Please go to [datafire.io](https://datafire.io) in case you want:
+
+* free hosting of datafire code
+* a comfortable, and scalable way of glue-ing together complex dataflows
+* share and re-use other people's dataflows 
 
 | topic | express-datafire | datafire.io |
 |-|-|-|
+| stress testing / monitoring          | yes     | yes (but may spike pricing tier) |
+| high volume realtime UDP-data        | yes     | no |
 | datafire actions                     | yes | yes |
 | datafire tasks                       | yes | yes |
 | datafire cli                         | yes | no  |
@@ -47,8 +57,12 @@ Please go to [datafire.io](https://datafire.io) in case you want a comfortable w
 | scalable                             | no  | yes |
 | multitenancy                         | tedious | easy |
 | create dataflows with existing integrations | tedious | easy |
-| IoT sensors / hardware access        | yes     | no |
+| IoT sensors / hardware access  | yes     | no |
 | runs on intranet                     | yes     | no |
+| offline prototyping                  | yes     | no |
+| hasslefree                           | yes     | no |
+| safe for clientwork                  | no      | yes |
+| work with extremely big files / video encoding | yes     | no |
 
 ![](https://gist.githubusercontent.com/coderofsalvation/561331553271fb75028a8dda6ddddd69/raw/24dfe7f5180eefcb0e32adbfea6ef9c3a250d46f/datafire-express-bigpicture.gif)
 
