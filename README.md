@@ -38,8 +38,7 @@ BOOM!
 > Disclaimer: I'm not affiliated with datafire, so basically this is fanware
 
 Express-datafire is intended for datafire enthousiast & experimentation, or to simply run 
- datafire-code which can't run on datafire.io.
-It wraps some express goodies around the datafire engine.
+ datafire-code which shouldn't run on datafire.io.
 Please go to [datafire.io](https://datafire.io) in case you want:
 
 * free hosting of datafire code
