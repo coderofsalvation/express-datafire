@@ -1,5 +1,5 @@
 {
-  "name": "express-datafire-middleware",
+  "name": "express-datafire",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
