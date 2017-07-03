@@ -1,19 +1,29 @@
-Express DataFire middleware 
-===========================
+Express DataFire
+================
 
-Serverless development using live-editing of endpoints (locally and/or from remote repo).
+Live-editing & testing of datafire endpoints & scheduled tasks using express.
 
-## Usage
+![](https://doc-00-2o-docs.googleusercontent.com/docs/securesc/n419gpuoebaj7j8vaakg00o1mvksiipr/8jb62apaai1dru3uajbri3hq2aco810k/1499104800000/03822313962190750421/03822313962190750421/0B6Bbmgd8asH-QjczNERlWUJyQk0?e=download)
+
+## Usage: as application
+
+    $ git clone https://github.com/coderofsalvation/express-datafire 
+    $ cd express-datafire
+    $ npm install
+    $ node app.js
+
+## Usage: as middleware
+
+    $ npm install express-datafire --save
+
+And in your express app:
 
     // Create a new Express application.
-    var express             = require('express')
     var app = express()
- 
-    require('express-faas')(app, {
-      repository: "https://github.com/coderofsalvation/expressa-faas-endpoints", // OPTIONAL
-      refresh_interval: 5000                                                     // OPTIONAL
-      url_docs: '/'                                                              // OPTIONAL
-    })
+
+    var port                = process.env.PORT || 3002
+    var host                = process.env.HOST || '127.0.0.1:'+port
+    require('./lib')(app, { port: port, host: host })
 
     app.listen(port, function(){
       console.log("listening on "+host)
@@ -21,10 +31,26 @@ Serverless development using live-editing of endpoints (locally and/or from remo
 
 BOOM! 
 
-    $ node app.js --inspect=0.0.0.0:3003
+* surf to `/` and you can access your endpoints & features 
 
-* surf to `/admin` and you can edit endpoints & configuration.
-* surf to `chrome://inspect`,  configure your host+port, and view the stdout/stderr in your console 
+## Why
+
+Express-datafire for experimental-minded datafire-enthousiast, and not for the fainthearted.
+Please go to [datafire.io](https://datafire.io) in case you want a comfortable way of glue-ing together complex dataflows with javascript.
+
+| topic | express-datafire | datafire.io |
+|-|-|-|
+| datafire actions                     | yes | yes |
+| datafire tasks                       | yes | yes |
+| datafire cli                         | yes | no  |
+| support for experimental npm modules | yes | no (for obvious reasons) |
+| scalable                             | no  | yes |
+| multitenancy                         | tedious | easy |
+| create dataflows with existing integrations | tedious | easy |
+| IoT sensors / hardware access        | yes     | no |
+| runs on intranet                     | yes     | no |
+
+![](https://lh5.googleusercontent.com/YuWDkxqDagINfg2ySBFiwEN9Cx47UFQptIMRVoilKNTKUIr2SUr1rk7D9BYV9tlZoZUH7pTC0vNmmXw=w1919-h966-rw)
 
 ## Environment variables 
 
@@ -43,25 +69,13 @@ All these are optional:
  
 ## Features
 
-* hot reloading of local endpoints and/or endpoints from repository
-* watch repository for changes
-* runs google cloud functions (if declared like so `module.helloGET = module.exports = function(req, res){..}`)
-* tries to automatically install missing modules from endpoint-code 
-* dynamic configuration of endpoint thru faas-token (header or payload-variable)
-* letsencrypt/ssl-ready
 * live editor
+* system monitor
+* hot reloading of datafire endpoints & scheduled tasks 
+* export of datafire config + files
+* tries to automatically install missing modules 
+* ssl-ready
 
-## Example endpoint
-
-
-> NOTE: by default all endpoints are json-endpoints. For raw payloads (forms e.g.) just specify `module.schema = {type:"string"}` as a schema.
-
-## Installation
-
-    $ npm install
-    $ datafire serve
-    DataFire listening on port 3000
- 
 ## Datafire Docs 
 
 see [here](https://github.com/DataFire/DataFire)

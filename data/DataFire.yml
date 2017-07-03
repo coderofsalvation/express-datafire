@@ -8,9 +8,18 @@ openapi:
 
 #authorizers:
 #  user:
-#    action: ./function/auth.js
+#    action: ./data/auth.js
 
 paths:
   /helloworld:
     get:
       action: ./data/helloworld.js
+  /foo:
+    get:
+      action: ./data/anothertest.js
+
+
+tasks:
+  your_task:
+    action: ./data/hellotask.js
+    schedule: cron(* * * * * *)

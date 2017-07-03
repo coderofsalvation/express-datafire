@@ -1,4 +1,5 @@
-var datafire = require('datafire')
+const datafire = require('datafire')
+require  = require('nrequire')         // redefine require to automatically install modules
 
 module.exports = new datafire.Action({
   inputs: [{
@@ -8,6 +9,7 @@ module.exports = new datafire.Action({
   }], 
 	handler: (input, context) => {
 		return new Promise( (resolve, reject) => {
+		  console.log("fooooooooo")
 			resolve({msg:'hello world: '+input.name})
 		})
 	}
