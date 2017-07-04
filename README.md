@@ -33,6 +33,10 @@ BOOM!
 
 * surf to `/` and you can access your endpoints & features 
 
+## Getting started video
+
+[![Check the getting started video](https://img.youtube.com/vi/mKeD6Y5OPGA/0.jpg)](https://www.youtube.com/watch?v=mKeD6Y5OPGA)
+
 ## Why
 
 > Disclaimer: I'm not affiliated with datafire, so basically this is fanware
