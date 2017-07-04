@@ -2,6 +2,7 @@
   "name": "express-datafire",
   "version": "1.0.8",
   "description": "",
+	"repository":"https://github.com/coderofsalvation/express-datafire",
   "main": "app.js",
   "scripts": {
 		"start": "node app",
