@@ -7,6 +7,10 @@ module.exports = new datafire.Action({
     type: 'string',
 		description: "Just an example value"
   }], 
+
+	//uncomment the line below to define a jsonschema 
+  //inputSchema: {},
+	
 	handler: (input, context) => {
 		return new Promise( (resolve, reject) => {
 		  console.log("fooooooooo")
