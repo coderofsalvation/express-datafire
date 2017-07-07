@@ -1,0 +1,7 @@
+accounts:
+    foo:
+        integration: google_gmail
+        client_id: 5de9g3.apps.googleusercontent.com
+        client_secret: qAL
+        access_token: y-EXAMPLE-xxxxxxxxxxxxxx 
+        refresh_token: y-EXAMPLE-xxxxxxxxxxxxxx

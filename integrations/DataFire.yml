@@ -8,14 +8,16 @@ openapi:
 
 #authorizers:
 #  user:
-#    action: ./data/auth.js
+#    action: ./integrations/auth.js
 
 paths:
   /helloworld:
     get:
-      action: ./data/helloworld.js
+      action: ./integrations/helloworld.js
+      accounts:
+          google_gmail: foo
 
 tasks:
   your_task:
-    action: ./data/hellotask.js
+    action: ./integrations/hellotask.js
     schedule: cron(* * * * * *)
