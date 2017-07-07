@@ -1,3 +1,5 @@
+# for docs see: https://github.com/DataFire/DataFire
+
 accounts:
     foo:
         integration: google_gmail
