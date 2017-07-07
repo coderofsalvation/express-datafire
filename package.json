@@ -1,6 +1,6 @@
 {
   "name": "express-datafire",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
 	"repository":"https://github.com/coderofsalvation/express-datafire",
   "main": "app.js",
